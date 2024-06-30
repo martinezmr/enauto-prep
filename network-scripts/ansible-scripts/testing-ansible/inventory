@@ -1,7 +1,7 @@
 [all:vars]
 ansible_user=cisco
 ansible_ssh_pass=cisco
-ansible_network=ios
+ansible_network_os=ios
 
 [eve]
 192.168.72.136
