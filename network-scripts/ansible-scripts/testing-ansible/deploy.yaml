@@ -1,0 +1,19 @@
+---
+
+- name: Test Show Commands
+  hosts: eve
+  connection: network_cli
+  gather_facts: yes
+
+  tasks:
+  - name: Show Version
+    ios_command:
+      commands:
+        - 'show version'
+    register: output
+
+  - name: Print Output
+    debug:
+      msg: output.stdout.lines
+
+
