@@ -1,0 +1,10 @@
+{
+    "ansible.python.interpreterPath": "c:\\Users\\mmart\\OneDrive\\Desktop\\Git Projects\\ENAUTO-Prep\\Scripts\\python.exe",
+    "azureFunctions.deploySubpath": "azure-environment",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.pythonVenv": "archive",
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectLanguageModel": 2
+}

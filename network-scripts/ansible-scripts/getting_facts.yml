@@ -1,0 +1,17 @@
+---
+- name: Create Loopback Payload from Template
+  hosts: sandbox
+  connection: local
+  tasks:
+    - name: Gather IOS Facts
+      ios_facts:
+        provider:
+          host: 
+      restconf_get:
+        content: config
+        output: json
+        path: /data/ietf-interfaces:interfaces
+      register: dataout
+
+    - name: Print output
+      debug: msg="{{dataout}}"
